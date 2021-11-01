@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <opml version="2.0">
 	<head>
-		<title>renderers</title>
-		<dateCreated>Mon, 01 Nov 2021 15:50:09 GMT</dateCreated>
-		<dateModified>Mon, 01 Nov 2021 15:50:43 GMT</dateModified>
+		<title>renderer</title>
+		<dateCreated>Mon, 01 Nov 2021 23:39:45 GMT</dateCreated>
+		<dateModified>Mon, 01 Nov 2021 23:40:04 GMT</dateModified>
 		<ownerTwitterScreenName>AndySylvester99</ownerTwitterScreenName>
 		<ownerName>Andy Sylvester</ownerName>
 		<ownerId>http://twitter.com/AndySylvester99</ownerId>
@@ -12,14 +12,22 @@
 		<lastCursor>0</lastCursor>
 		</head>
 	<body>
-		<outline text="Renderers" created="Mon, 01 Nov 2021 15:50:09 GMT" isComment="true"/>
 		<outline text="twoLevelOutlineRenderer" created="Thu, 28 Oct 2021 23:18:06 GMT">
 			<outline text="Script Header" created="Mon, 01 Nov 2021 13:02:50 GMT" isComment="true">
 				<outline text="Author: Andy Sylvester" created="Mon, 01 Nov 2021 13:03:07 GMT"/>
 				<outline text="URL: http://oldschool.scripting.com/AndySylvester99/ " created="Mon, 01 Nov 2021 13:03:56 GMT"/>
 				<outline text="Github repo: https://github.com/andysylvester/drummer-outline-renderers " created="Mon, 01 Nov 2021 13:08:39 GMT"/>
-				<outline text="Date: 11/1/2021" created="Mon, 01 Nov 2021 13:04:08 GMT"/>
-				<outline text="Revision: Original" created="Mon, 01 Nov 2021 13:06:18 GMT"/>
+				<outline text="Revision History:" created="Mon, 01 Nov 2021 20:16:00 GMT">
+					<outline text="Revision: A" created="Mon, 01 Nov 2021 20:16:10 GMT">
+						<outline text="Date: 11/1/2021" created="Mon, 01 Nov 2021 20:16:35 GMT"/>
+						<outline text="Added logic to read the first headline/summit (I thought it was getting read, but my test file (ledes.opml) had a blank summit headline, so I missed it)" created="Mon, 01 Nov 2021 20:16:41 GMT"/>
+						<outline text="Closes issue 1 (https://github.com/andysylvester/drummer-outline-renderers/issues/1)" created="Mon, 01 Nov 2021 20:19:12 GMT"/>
+						</outline>
+					<outline text="Revision: Original" created="Mon, 01 Nov 2021 13:06:18 GMT">
+						<outline text="Date: 11/1/2021" created="Mon, 01 Nov 2021 13:04:08 GMT"/>
+						<outline text="First release of script" created="Mon, 01 Nov 2021 20:17:33 GMT"/>
+						</outline>
+					</outline>
 				<outline text="Instructions:" created="Mon, 01 Nov 2021 13:04:19 GMT">
 					<outline text="1. Copy this script to your Scripts menu outline" created="Mon, 01 Nov 2021 13:05:17 GMT"/>
 					<outline text="2. Open a new tab with the outline to be rendered or select an open tab" created="Mon, 01 Nov 2021 13:05:36 GMT"/>
@@ -34,6 +42,9 @@
 			<outline text="var htmltext = http.readUrl (urlTemplate);" created="Tue, 13 Jul 2021 21:39:17 GMT"/>
 			<outline text="op.expandAllLevels ()" created="Fri, 29 Oct 2021 19:17:15 GMT"/>
 			<outline text="op.firstSummit()" created="Mon, 18 Oct 2021 22:21:21 GMT" isComment="false"/>
+			<outline text="var clearQuoteFirst = op.getLineText();" created="Thu, 28 Oct 2021 21:59:32 GMT" isComment="false"/>
+			<outline text="var htmltextNewFirst = clearQuoteFirst .replace (/&quot;/g, '&amp;quot;');" created="Thu, 28 Oct 2021 21:59:32 GMT" isComment="false"/>
+			<outline text="s = s + htmltextNewFirst  + &quot;&lt;p&gt;&quot; " created="Mon, 18 Oct 2021 22:22:10 GMT"/>
 			<outline text="while (op.go (down, 1)) {" created="Thu, 25 Feb 2021 19:25:22 GMT" isComment="false">
 				<outline text="var clearQuote = op.getLineText();" created="Thu, 28 Oct 2021 21:59:32 GMT" isComment="false"/>
 				<outline text="var htmltextNewB = clearQuote .replace (/&quot;/g, '&amp;quot;');" created="Thu, 28 Oct 2021 21:59:32 GMT" isComment="false"/>
