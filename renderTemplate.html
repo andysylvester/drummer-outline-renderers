@@ -1,0 +1,68 @@
+
+<html>
+	<head>
+		<title>twoLevelOutlineReader</title> 
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="//fonts.googleapis.com/css?family=Ubuntu:400,500i,700" rel="stylesheet">
+        <link href="//fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>
+			function startup () {
+				console.log ("startup");
+                var myDiv = document.getElementById("outliner");
+                myDiv.innerHTML = "REPLACEME";
+				}
+			</script>
+		<style>
+			body {
+				background-color: whitesmoke;
+				}
+			.divPageBody {
+				width: 70%;
+				margin-top: 90px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 400px;
+				}
+			.divHappyOutline {
+				border: 1px solid silver;
+				padding: 5px;
+				min-height: 400px;
+				background-color: white;
+				font-family: "Ubuntu";
+				font-size: 22px;
+                line-height: 1.6;
+                }
+			.divPageTitle {
+				font-family: "Ubuntu";
+				}
+			.divPageDescription {
+				font-family: "Ubuntu";
+				font-size: 30px;
+				margin-bottom: 25px;
+				}
+			.outliner {
+				font-family: "Ubuntu";
+				font-size: 30px;
+				margin-bottom: 25px;
+				}
+	</style>
+		</head>
+	<body>
+		<div class="divPageBody">
+			<h1 class="divPageTitle" id="idPageTitle"></h1>
+			<p class="divPageDescription" id="idPageDescription"></p>
+			<div class="divHappyOutline" id="idHappyOutline">
+				<div id="outliner">
+					</div>
+				</div>
+			</div>
+		<script>
+			$(document).ready (function () {
+				startup ();
+				});
+			</script>
+		</body>
+	</html>
