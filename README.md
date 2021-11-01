@@ -39,3 +39,10 @@ Be able to create a handout from an outline that could be distributed in a meeti
 
 
 If anyone has other use cases to propose, please create an issue in this repo.
+
+# Credits
+
+[Ken Smith](http://oldschool.scripting.com/KenSmith/)- "The user" who proposed this idea (I of course am "the developer"!)
+
+[Little Outliner](http://littleoutliner.com/) - Used the Build a Listicle feature as prior art
+
