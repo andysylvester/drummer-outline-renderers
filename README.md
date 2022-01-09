@@ -7,11 +7,17 @@ An area of Drummer that has not been explored is how to take the content of an o
 
 To foster collaboration and creativity in this area, I have created this Github repo to share some examples, and to get feedback from other Drummer users on what they would like to see. 
 
-The initial script I have created will scan a two-level outline (an outline with headings and one level of subheadings) and create a web page with the content from that outline. In this first example, the subheadings are not indented, so the text from both first level and second level headlines are treated as paragraphs at the same level. I have added a minor check for double-quote marks within the text of each heading to convert it to single quotes so that the text string formed by concatenating all of the headlines does not have an error in display. 
+The initial script I have created will scan a two-level outline (an outline with headings and one level of subheadings) and create a web page with the content from that outline. In this first example, the subheadings are not indented, so the text from both first level and second level headlines are treated as paragraphs at the same level. I have added a minor check for double-quote marks within the text of each heading to convert it to single quotes so that the text string formed by concatenating all of the headlines does not have an error in display.
+
+## Installation
 
 To get a copy of the script, first open my sharedScripts OPML file in Drummer (http://drummer.scripting.com/AndySylvester99/sharedScripts.opml ) using the File → Open URL menu item and copy the script headline “twoLevelOutlineRenderer” to your Scripts menu outline. To open the Scripts menu outline, go to the File → Special files → Scripts menu item. Once you have pasted the script, you should see “TwoLevelOutlineRenderer” appear in your Scripts menu.
 
+## Use
+
 To use the script, open a tab with an outline to be rendered, or select a tab that is already opened. Next, go to the Scripts menu and select the “TwoLevelOutlineRenderer” menu item. Drummer will open a new browser tab to display the page. If the text “object Object” is displayed in the new browser tab, switch back to Drummer and run the script again. Drummer will open another browser tab, and the rendered text should appear in the new browser tab.
+
+In Revision C of the script users can specify the HTML file name of the rendered file. To specify the file name of the rendered file, open the source OPML file in a tab, click on the suitcase icon, click on the plus sign to add an attribute, enter "htmlFileName" in the first column text field (without quotes), then enter the name of the filename in the second column text field (for example, "essay.html") without quotes. If a public/Instant Outline OPML file is being rendered, the rendered file name will be "myOutline.html". If a private OPML file is being rendered without the OPML file header attribute, the rendered file name will be "myOutline.html"
 
 # Area for experimentation
 
