@@ -11,7 +11,7 @@ The initial script I have created will scan a two-level outline (an outline with
 
 ## Installation
 
-To get a copy of the script, first open my sharedScripts OPML file in Drummer (http://drummer.scripting.com/AndySylvester99/sharedScripts.opml ) using the File → Open URL menu item and copy the script headline “twoLevelOutlineRenderer” to your Scripts menu outline. To open the Scripts menu outline, go to the File → Special files → Scripts menu item. Once you have pasted the script, you should see “TwoLevelOutlineRenderer” appear in your Scripts menu.
+To get a copy of the script, first open my sharedScripts OPML file in Drummer (http://drummer.scripting.com/AndySylvester99/sharedScripts.opml ) using the File → Open URL menu item and copy the script headline “twoLevelOutlineRenderer” to your Scripts menu outline. To open the Scripts menu outline, go to the File → Special files → Scripts menu item. Once you have pasted the script, you should see “twoLevelOutlineRenderer” appear in your Scripts menu.
 
 ## Use
 
